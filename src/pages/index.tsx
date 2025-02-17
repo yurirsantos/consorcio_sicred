@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import { formatCpfCnpj } from '@/services/formatadores'
 import { Loading } from '@/components/Loading'
-import { showSidebar } from '@/redux/sidebar/actions'
 import { Modal } from 'rsuite'
 import { WarningCircle } from '@phosphor-icons/react'
 

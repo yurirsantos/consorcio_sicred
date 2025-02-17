@@ -1,7 +1,5 @@
 import type { AppProps } from 'next/app'
 import { Provider } from 'react-redux'
-import { PersistGate } from 'redux-persist/integration/react'
-import { store, persistor } from '@/redux/store'
 import '@/pages/globals.css'
 import { PrimeReactProvider } from 'primereact/api'
 import 'primereact/resources/themes/lara-light-cyan/theme.css'
@@ -16,14 +14,10 @@ import { ToastContainer } from 'react-toastify'
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <PrimeReactProvider>
-      <Provider store={store}>
-        <PersistGate loading={null} persistor={persistor}>
-          <CustomProvider locale={ptBR} theme="light">
-            <Component {...pageProps} />
-            <ToastContainer stacked />
-          </CustomProvider>
-        </PersistGate>
-      </Provider>
+      <CustomProvider locale={ptBR} theme="light">
+        <Component {...pageProps} />
+        <ToastContainer stacked />
+      </CustomProvider>
     </PrimeReactProvider>
   )
 }
