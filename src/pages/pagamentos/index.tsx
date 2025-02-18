@@ -304,7 +304,7 @@ export default function Pagamentos() {
           )}
 
           <p
-            className="text-sm text-blue-700 hover:underline cursor-pointer"
+            className="text-sm text-blue-700 hover:underline cursor-pointer w-max"
             onClick={() => {
               setLoading(true)
 
@@ -316,6 +316,15 @@ export default function Pagamentos() {
           >
             Carregar {carregarMaisPagamentos ? 'menos' : 'mais'}
           </p>
+
+          {carregarMaisPagamentos && (
+            <div className="mt-5">
+              <p className="text-sm text-center text-[#14B2C1]">
+                Para visualizar outros pagamentos, entre em contato com sua
+                agência!
+              </p>
+            </div>
+          )}
 
           <div className="mt-10 border border-[#BFDCE5] rounded-md p-4">
             <p className="font-bold text-[#14B2C1]">ORIENTAÇÕES</p>
