@@ -16,7 +16,7 @@ import { Popover, Whisper } from 'rsuite'
 export default function Home() {
   const [loading, setLoading] = useState<boolean>(true)
   const router = useRouter()
-  const parcelasPagas = 62
+  const parcelasPagas = 63
   const totalParcelas = 170
   const porcentagem = (parcelasPagas / totalParcelas) * 100
 
@@ -145,7 +145,7 @@ export default function Home() {
 
                 <div className="flex justify-center items-center mt-4 gap-2">
                   <p className="text-4xl font-bold text-green-500">
-                    R$ 31.108,00
+                    R$ 31.602,92
                   </p>
                   <p className="text-4xl font-bold text-gray-500">/</p>
                   <p className="text-4xl font-bold text-gray-800">

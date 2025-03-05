@@ -19,6 +19,12 @@ export default function Pagamentos() {
 
   const pagamentos = [
     {
+      dataVencimento: '21/03/2025',
+      dataPagamento: '05/03/2025',
+      valor: 'R$ 494,92',
+      pago: 'Sim'
+    },
+    {
       dataVencimento: '22/02/2025',
       dataPagamento: '17/02/2025',
       valor: 'R$ 496,00',
